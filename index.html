@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Land | حلول برمجية وذكاء اصطناعي</title>
+  <meta name="description" content="Smart Land شركة تقنية تأسست عام 2011، تطور تطبيقات ومنصات ذكية في الإتاحة والعقارات والتعليم والتجارة والصحة.">
+  <link rel="icon" href="assets/logo/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" as="image" type="image/avif" imagesrcset="assets/img/hero-640.avif 640w, assets/img/hero-1024.avif 1024w, assets/img/hero-1376.avif 1376w" imagesizes="100vw">
+</head>
+<body>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="القائمة الرئيسية">
+      <a class="brand" href="index.html"><img src="assets/logo/logo.svg" alt="Smart Land" width="180" height="46"></a>
+      <button class="nav__toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav__links">
+        <li><a href="index.html" aria-current="page">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="services.html">خدماتنا</a></li>
+        <li><a href="projects.html">مشاريعنا</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- hero -->
+    <section class="hero">
+      <picture class="hero__bg">
+        <source type="image/avif" srcset="assets/img/hero-640.avif 640w, assets/img/hero-1024.avif 1024w, assets/img/hero-1376.avif 1376w" sizes="100vw">
+        <source type="image/webp" srcset="assets/img/hero-640.webp 640w, assets/img/hero-1024.webp 1024w, assets/img/hero-1376.webp 1376w" sizes="100vw">
+        <img src="assets/img/hero-1024.webp" alt="" width="1376" height="774" fetchpriority="high">
+      </picture>
+      <div class="container">
+        <div class="hero__content">
+          <span class="eyebrow" style="color:var(--mint)">منذ 2011</span>
+          <h1>نحوّل الأفكار إلى <span>حلول ذكية</span> تخدم الناس</h1>
+          <p>Smart Land شركة تقنية تبني التطبيقات والمنصات الرقمية وتضع الذكاء الاصطناعي في خدمة الإتاحة والتعليم والعقارات والتجارة والصحة.</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" data-video="intro">شاهد الفيديو التعريفي</button>
+            <a class="btn btn--ghost" href="projects.html">تصفح مشاريعنا</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- numbers -->
+    <div class="container">
+      <div class="stats">
+        <div class="stat"><strong>2011</strong><span>سنة التأسيس</span></div>
+        <div class="stat"><strong data-count="5">5</strong><span>منتجات رئيسية</span></div>
+        <div class="stat"><strong data-count="5">5</strong><span>قطاعات نخدمها</span></div>
+        <div class="stat"><strong data-count="15" data-plus="+">15+</strong><span>سنة من الخبرة</span></div>
+      </div>
+    </div>
+
+    <!-- about + intro video -->
+    <section class="section">
+      <div class="container grid grid--2">
+        <div class="reveal">
+          <span class="eyebrow">من نحن</span>
+          <h2>شريك تقني يفهم احتياجك قبل أن يكتب سطراً من الكود</h2>
+          <p class="lead">بدأت Smart Land عام 2011 بفريق صغير من المطورين، واليوم تعمل على منتجات يستخدمها الناس كل يوم: من ترجمة لغة الإشارة إلى إدارة المشافي.</p>
+          <ul class="checklist">
+            <li>تحليل المشكلة مع العميل قبل اقتراح الحل</li>
+            <li>تطبيقات ويب وموبايل بواجهة عربية سهلة</li>
+            <li>نماذج ذكاء اصطناعي مدمجة في المنتج نفسه</li>
+          </ul>
+          <a class="btn btn--outline" href="about.html" style="margin-top:14px">اقرأ قصتنا</a>
+        </div>
+        <div class="reveal">
+          <div class="video-card">
+            <video controls preload="metadata" poster="assets/video/intro-poster.webp" width="1280" height="720">
+              <source src="assets/video/intro.mp4" type="video/mp4">
+              <track kind="captions" src="assets/video/intro.vtt" srclang="ar" label="العربية">
+              متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+          </div>
+          <p class="video-caption">فيديو تعريفي بالشركة (43 ثانية) مع تعليق صوتي وترجمة عربية متزامنة.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- services preview -->
+    <section class="section section--white">
+      <div class="container">
+        <div class="center reveal">
+          <span class="eyebrow">ماذا نقدم</span>
+          <h2>خدمات تغطي رحلة المنتج كاملة</h2>
+          <p class="lead">من الفكرة الأولى حتى الإطلاق والدعم بعده.</p>
+        </div>
+        <div class="grid grid--3" style="margin-top:40px">
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+            <h3>تطبيقات الموبايل</h3>
+            <p>تطبيقات Android وiOS سريعة، بواجهات عربية مريحة للمستخدم.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M5 19l3-3M16 8l3-3"/></svg></div>
+            <h3>حلول الذكاء الاصطناعي</h3>
+            <p>رؤية حاسوبية ومعالجة لغة طبيعية مثل التعرف على لغة الإشارة.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M6 6.5h.01M9 6.5h.01"/></svg></div>
+            <h3>المنصات وأنظمة الإدارة</h3>
+            <p>منصات ويب وأنظمة إدارة للمؤسسات، منها أنظمة إدارة المشافي.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- featured projects -->
+    <section class="section">
+      <div class="container">
+        <div class="center reveal">
+          <span class="eyebrow">من أعمالنا</span>
+          <h2>منتجات يستخدمها الناس كل يوم</h2>
+        </div>
+        <div class="grid grid--3" style="margin-top:40px">
+          <a class="card project reveal" href="projects.html#smart-signal">
+            <picture>
+              <source type="image/avif" srcset="assets/img/smartsignal-480.avif 480w, assets/img/smartsignal-800.avif 800w" sizes="(max-width:600px) 100vw, 380px">
+              <source type="image/webp" srcset="assets/img/smartsignal-480.webp 480w, assets/img/smartsignal-800.webp 800w" sizes="(max-width:600px) 100vw, 380px">
+              <img src="assets/img/smartsignal-480.webp" alt="شاب يستخدم لغة الإشارة أمام هاتف يتتبع حركة يديه" width="480" height="360" loading="lazy">
+            </picture>
+            <div class="project__body"><span class="tag">إتاحة · ذكاء اصطناعي</span><h3>Smart Signal</h3><p>ترجمة لغة الإشارة إلى نص وصوت.</p></div>
+          </a>
+          <a class="card project reveal" href="projects.html#mykey">
+            <picture>
+              <source type="image/avif" srcset="assets/img/mykey-480.avif 480w, assets/img/mykey-800.avif 800w" sizes="(max-width:600px) 100vw, 380px">
+              <source type="image/webp" srcset="assets/img/mykey-480.webp 480w, assets/img/mykey-800.webp 800w" sizes="(max-width:600px) 100vw, 380px">
+              <img src="assets/img/mykey-480.webp" alt="رجل يحمل هاتفاً يعرض إعلان شقة أمام بناء سكني" width="480" height="360" loading="lazy">
+            </picture>
+            <div class="project__body"><span class="tag">عقارات · مركبات</span><h3>MyKey</h3><p>إعلانات بيع وإيجار العقارات والمركبات.</p></div>
+          </a>
+          <a class="card project reveal" href="projects.html#sada">
+            <picture>
+              <source type="image/avif" srcset="assets/img/sada-480.avif 480w, assets/img/sada-800.avif 800w" sizes="(max-width:600px) 100vw, 380px">
+              <source type="image/webp" srcset="assets/img/sada-480.webp 480w, assets/img/sada-800.webp 800w" sizes="(max-width:600px) 100vw, 380px">
+              <img src="assets/img/sada-480.webp" alt="طالب يتابع محاضرة على الحاسوب ويرفع يده" width="480" height="360" loading="lazy">
+            </picture>
+            <div class="project__body"><span class="tag">تعليم</span><h3>Sada</h3><p>منصة تعلّم عن بعد بمحاضرات تفاعلية.</p></div>
+          </a>
+        </div>
+        <p class="center" style="margin-top:34px"><a class="btn btn--primary" href="projects.html">كل المشاريع</a></p>
+      </div>
+    </section>
+
+    <!-- call to action -->
+    <section class="section section--white">
+      <div class="container">
+        <div class="cta reveal">
+          <div>
+            <h2>عندك فكرة تطبيق؟</h2>
+            <p>أخبرنا عنها، ونقترح عليك الحل المناسب وخطة العمل.</p>
+          </div>
+          <a class="btn btn--ghost" href="contact.html">تواصل معنا</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- video modal (opened by buttons with data-video) -->
+  <div class="modal" id="video-modal" role="dialog" aria-modal="true" aria-label="مشغل الفيديو">
+    <div class="modal__box modal__box--video">
+      <button class="modal__close" aria-label="إغلاق">&times;</button>
+      <video controls playsinline width="1280" height="720">
+        <source type="video/mp4">
+        <track kind="captions" srclang="ar" label="العربية">
+      </video>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/logo/logo-light.svg" alt="Smart Land" width="172" height="44">
+          <p>شركة تقنية تأسست عام 2011، تطور تطبيقات ومنصات ذكية في الإتاحة والعقارات والتعليم والتجارة والصحة.</p>
+        </div>
+        <div>
+          <h3>روابط</h3>
+          <ul>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="projects.html">مشاريعنا</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>عن هذا الموقع</h3>
+          <p>مشروع جامعي لمقرر الوسائط المتعددة BMM601 في الجامعة الافتراضية السورية. الصور ومقاطع الفيديو مولدة بأداة Google Flow ثم معدلة.</p>
+        </div>
+      </div>
+      <div class="credit">
+        <span>&copy; <span class="year">2026</span> Smart Land</span>
+        <span lang="en">Mohammed Zaid Al-Nahhas · mhd_zaid_211096</span>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" aria-label="العودة للأعلى">&uarr;</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

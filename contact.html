@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تواصل معنا | Smart Land</title>
+  <meta name="description" content="تواصل مع فريق Smart Land لطلب مشروع أو استشارة تقنية.">
+  <link rel="icon" href="assets/logo/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="القائمة الرئيسية">
+      <a class="brand" href="index.html"><img src="assets/logo/logo.svg" alt="Smart Land" width="180" height="46"></a>
+      <button class="nav__toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav__links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="services.html">خدماتنا</a></li>
+        <li><a href="projects.html">مشاريعنا</a></li>
+        <li><a href="contact.html" aria-current="page">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <picture class="hero__bg">
+        <source type="image/avif" srcset="assets/img/contact-640.avif 640w, assets/img/contact-1024.avif 1024w, assets/img/contact-1376.avif 1376w" sizes="100vw">
+        <source type="image/webp" srcset="assets/img/contact-640.webp 640w, assets/img/contact-1024.webp 1024w, assets/img/contact-1376.webp 1376w" sizes="100vw">
+        <img src="assets/img/contact-1024.webp" alt="" width="1376" height="774">
+      </picture>
+      <div class="container">
+        <span class="eyebrow" style="color:var(--mint)">تواصل معنا</span>
+        <h1>لنتحدث عن مشروعك</h1>
+        <p>اكتب لنا فكرتك أو سؤالك، وسيتواصل معك أحد أعضاء الفريق.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid--2" style="align-items:start">
+        <div class="reveal">
+          <h2>أرسل رسالة</h2>
+          <form class="form" novalidate>
+            <div>
+              <label for="name">الاسم الكامل</label>
+              <input id="name" name="name" type="text" autocomplete="name">
+              <span class="error" id="name-error" aria-live="polite"></span>
+            </div>
+            <div>
+              <label for="email">البريد الإلكتروني</label>
+              <input id="email" name="email" type="email" autocomplete="email" dir="ltr">
+              <span class="error" id="email-error" aria-live="polite"></span>
+            </div>
+            <div>
+              <label for="topic">موضوع الرسالة</label>
+              <select id="topic" name="topic">
+                <option value="">اختر...</option>
+                <option>طلب مشروع جديد</option>
+                <option>استشارة تقنية</option>
+                <option>دعم فني لمنتج حالي</option>
+                <option>الانضمام للفريق</option>
+              </select>
+              <span class="error" id="topic-error" aria-live="polite"></span>
+            </div>
+            <div>
+              <label for="message">الرسالة</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+              <span class="error" id="message-error" aria-live="polite"></span>
+            </div>
+            <button class="btn btn--primary" type="submit">إرسال</button>
+            <p class="form-success" role="status">وصلت رسالتك، شكراً لك. (الموقع ثابت، لذلك تتحقق الصفحة من الحقول فقط ولا ترسل البيانات إلى خادم.)</p>
+          </form>
+        </div>
+
+        <div class="reveal">
+          <h2>معلومات التواصل</h2>
+          <ul class="contact-list">
+            <li>
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+              <div><small>المكان</small>سوريا</div>
+            </li>
+            <li>
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+              <div><small>ساعات العمل</small>الأحد إلى الخميس، 9 صباحاً حتى 5 مساءً</div>
+            </li>
+            <li>
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+              <div><small>مدة الرد</small>خلال يومي عمل</div>
+            </li>
+          </ul>
+          <div class="rounded-img" style="margin-top:24px">
+            <picture>
+              <source type="image/avif" srcset="assets/img/wave-480.avif 480w, assets/img/wave-800.avif 800w" sizes="(max-width:820px) 100vw, 560px">
+              <source type="image/webp" srcset="assets/img/wave-480.webp 480w, assets/img/wave-800.webp 800w" sizes="(max-width:820px) 100vw, 560px">
+              <img src="assets/img/wave-480.webp" alt="شاشة هاتف تعرض أيقونات إشارات اليد تتحول إلى موجة صوتية" width="480" height="360" loading="lazy">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/logo/logo-light.svg" alt="Smart Land" width="172" height="44">
+          <p>شركة تقنية تأسست عام 2011، تطور تطبيقات ومنصات ذكية في الإتاحة والعقارات والتعليم والتجارة والصحة.</p>
+        </div>
+        <div>
+          <h3>روابط</h3>
+          <ul>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="projects.html">مشاريعنا</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>عن هذا الموقع</h3>
+          <p>مشروع جامعي لمقرر الوسائط المتعددة BMM601 في الجامعة الافتراضية السورية. الصور ومقاطع الفيديو مولدة بأداة Google Flow ثم معدلة.</p>
+        </div>
+      </div>
+      <div class="credit">
+        <span>&copy; <span class="year">2026</span> Smart Land</span>
+        <span lang="en">Mohammed Zaid Al-Nahhas · mhd_zaid_211096</span>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" aria-label="العودة للأعلى">&uarr;</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

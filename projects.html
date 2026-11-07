@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مشاريعنا | Smart Land</title>
+  <meta name="description" content="معرض مشاريع Smart Land: Smart Signal وMyKey وSada وWelcome وأنظمة إدارة المشافي، مع قصص النجاح.">
+  <link rel="icon" href="assets/logo/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="القائمة الرئيسية">
+      <a class="brand" href="index.html"><img src="assets/logo/logo.svg" alt="Smart Land" width="180" height="46"></a>
+      <button class="nav__toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav__links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="services.html">خدماتنا</a></li>
+        <li><a href="projects.html" aria-current="page">مشاريعنا</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <picture class="hero__bg">
+        <source type="image/avif" srcset="assets/img/success-640.avif 640w, assets/img/success-1024.avif 1024w, assets/img/success-1376.avif 1376w" sizes="100vw">
+        <source type="image/webp" srcset="assets/img/success-640.webp 640w, assets/img/success-1024.webp 1024w, assets/img/success-1376.webp 1376w" sizes="100vw">
+        <img src="assets/img/success-1024.webp" alt="" width="1376" height="774">
+      </picture>
+      <div class="container">
+        <span class="eyebrow" style="color:var(--mint)">مشاريعنا</span>
+        <h1>منتجات صنعناها ونفخر بها</h1>
+        <p>اضغط على أي مشروع لقراءة تفاصيله وإنجازاته.</p>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="section">
+      <div class="container">
+        <div class="filters" role="group" aria-label="تصفية المشاريع">
+          <button class="active" data-filter="all">الكل</button>
+          <button data-filter="ai">ذكاء اصطناعي</button>
+          <button data-filter="mobile">تطبيقات موبايل</button>
+          <button data-filter="web">منصات ويب</button>
+          <button data-filter="health">صحة</button>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card project reveal" id="smart-signal" data-cat="ai mobile" tabindex="0" role="button" aria-label="تفاصيل Smart Signal">
+            <picture>
+              <source type="image/avif" srcset="assets/img/smartsignal-480.avif 480w, assets/img/smartsignal-800.avif 800w, assets/img/smartsignal-960.avif 960w" sizes="(max-width:600px) 100vw, 380px">
+              <source type="image/webp" srcset="assets/img/smartsignal-480.webp 480w, assets/img/smartsignal-800.webp 800w, assets/img/smartsignal-960.webp 960w" sizes="(max-width:600px) 100vw, 380px">
+              <img src="assets/img/smartsignal-480.webp" alt="شاب يستخدم لغة الإشارة أمام هاتف يتتبع حركة يديه" width="480" height="360" loading="lazy">
+            </picture>
+            <div class="project__body">
+              <span class="tag">إتاحة · ذكاء اصطناعي</span>
+              <h3>Smart Signal</h3>
+              <p>تطبيق يترجم لغة الإشارة إلى نص وصوت عبر كاميرا الهاتف.</p>
+            </div>
+            <template>
+              <p>يساعد التطبيق الأشخاص الصم على التواصل مع من لا يعرف لغة الإشارة. يلتقط الهاتف حركة اليدين بالكاميرا، ويتعرف عليها نموذج رؤية حاسوبية، ثم يعرض الكلمات نصاً وينطقها بصوت.</p>
+              <ul class="checklist"><li>يعمل في الوقت الحقيقي على الهاتف</li><li>يدعم الكلمات والعبارات اليومية الشائعة</li><li>واجهة بسيطة بأزرار كبيرة وواضحة</li></ul>
+            </template>
+          </article>
+
+          <article class="card project reveal" id="mykey" data-cat="web mobile" tabindex="0" role="button" aria-label="تفاصيل MyKey">
+            <picture>
+              <source type="image/avif" srcset="assets/img/mykey-480.avif 480w, assets/img/mykey-800.avif 800w, assets/img/mykey-960.avif 960w" sizes="(max-width:600px) 100vw, 380px">
+              <source type="image/webp" srcset="assets/img/mykey-480.webp 480w, assets/img/mykey-800.webp 800w, assets/img/mykey-960.webp 960w" sizes="(max-width:600px) 100vw, 380px">
+              <img src="assets/img/mykey-480.webp" alt="رجل يحمل هاتفاً يعرض إعلان شقة أمام بناء سكني" width="480" height="360" loading="lazy">
+            </picture>
+            <div class="project__body">
+              <span class="tag">عقارات · مركبات</span>
+              <h3>MyKey</h3>
+              <p>منصة إعلانات لبيع وإيجار العقارات والمركبات.</p>
+            </div>
+            <template>
+              <p>تجمع MyKey إعلانات الشقق والمحلات والأراضي والسيارات في مكان واحد. يستطيع المستخدم البحث حسب المنطقة والسعر والنوع، ومراسلة المعلن مباشرة من التطبيق.</p>
+              <ul class="checklist"><li>فلاتر بحث تفصيلية وخريطة للمواقع</li><li>حفظ الإعلانات المفضلة وتنبيهات بالجديد</li><li>لوحة تحكم للمكاتب العقارية ومعارض السيارات</li></ul>
+            </template>
+          </article>
+
+          <article class="card project reveal" id="sada" data-cat="web" tabindex="0" role="button" aria-label="تفاصيل Sada">
+            <picture>
+              <source type="image/avif" srcset="assets/img/sada-480.avif 480w, assets/img/sada-800.avif 800w, assets/img/sada-960.avif 960w" sizes="(max-width:600px) 100vw, 380px">
+              <source type="image/webp" srcset="assets/img/sada-480.webp 480w, assets/img/sada-800.webp 800w, assets/img/sada-960.webp 960w" sizes="(max-width:600px) 100vw, 380px">
+              <img src="assets/img/sada-480.webp" alt="طالب يتابع محاضرة على الحاسوب ويرفع يده" width="480" height="360" loading="lazy">
+            </picture>
+            <div class="project__body">
+              <span class="tag">تعليم</span>
+              <h3>Sada</h3>
+              <p>منصة تعلم عن بعد بمحاضرات مباشرة ومسجلة.</p>
+            </div>
+            <template>
+              <p>منصة Sada تربط المدرس بطلابه في صف افتراضي: بث مباشر، تسجيل للمحاضرات، وظائف واختبارات إلكترونية، ومتابعة لتقدم كل طالب.</p>
+              <ul class="checklist"><li>صفوف مباشرة مع سبورة ومشاركة شاشة</li><li>بنك أسئلة واختبارات تصحح تلقائياً</li><li>تقارير للمدرس والإدارة عن الحضور والنتائج</li></ul>
+            </template>
+          </article>
+
+          <article class="card project reveal" id="welcome" data-cat="mobile" tabindex="0" role="button" aria-label="تفاصيل Welcome">
+            <picture>
+              <source type="image/avif" srcset="assets/img/welcome-480.avif 480w, assets/img/welcome-800.avif 800w, assets/img/welcome-1024.avif 1024w" sizes="(max-width:600px) 100vw, 380px">
+              <source type="image/webp" srcset="assets/img/welcome-480.webp 480w, assets/img/welcome-800.webp 800w, assets/img/welcome-1024.webp 1024w" sizes="(max-width:600px) 100vw, 380px">
+              <img src="assets/img/welcome-480.webp" alt="هاتف يعرض تطبيق تسوق وحوله أكياس وصندوق توصيل" width="480" height="360" loading="lazy">
+            </picture>
+            <div class="project__body">
+              <span class="tag">تجارة إلكترونية</span>
+              <h3>Welcome</h3>
+              <p>تطبيق تسوق يجمع عدة متاجر في سلة واحدة.</p>
+            </div>
+            <template>
+              <p>يتصفح المستخدم في Welcome منتجات من متاجر مختلفة ويطلبها بطلب واحد. لكل متجر لوحة لإدارة منتجاته وطلباته، ويتابع الزبون حالة التوصيل خطوة بخطوة.</p>
+              <ul class="checklist"><li>سلة مشتركة لعدة متاجر</li><li>تتبع الطلب حتى وصوله</li><li>عروض وكوبونات خاصة بكل متجر</li></ul>
+            </template>
+          </article>
+
+          <article class="card project reveal" id="hospital" data-cat="web health" tabindex="0" role="button" aria-label="تفاصيل أنظمة إدارة المشافي">
+            <div class="art" role="img" aria-label="رسم لمبنى مشفى مع خط نبض">
+              <svg viewBox="0 0 120 100" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="22" y="22" width="76" height="66" rx="6" stroke="#fff" stroke-width="4"/>
+                <path d="M50 88V70h20v18" stroke="#fff" stroke-width="4"/>
+                <path d="M60 32v20M50 42h20" stroke="#5EEAD4" stroke-width="6"/>
+                <path d="M4 60h22l6-10 8 18 6-8h68" stroke="#5EEAD4" stroke-width="3" opacity=".8"/>
+              </svg>
+            </div>
+            <div class="project__body">
+              <span class="tag">صحة</span>
+              <h3>أنظمة إدارة المشافي</h3>
+              <p>نظام متكامل للمرضى والمواعيد والمخابر والفواتير.</p>
+            </div>
+            <template>
+              <p>نظام ويب يربط أقسام المشفى ببعضها: الاستقبال يسجل المريض، الطبيب يكتب التشخيص والوصفة، المخبر يرفع النتائج، والمحاسبة تصدر الفاتورة من نفس الملف.</p>
+              <ul class="checklist"><li>ملف إلكتروني واحد لكل مريض</li><li>صلاحيات مختلفة لكل قسم ولكل موظف</li><li>تقارير يومية للإدارة عن الإشغال والإيرادات</li></ul>
+            </template>
+          </article>
+
+          <article class="card project reveal" id="ai-lab" data-cat="ai" tabindex="0" role="button" aria-label="تفاصيل مختبر الذكاء الاصطناعي">
+            <picture>
+              <source type="image/avif" srcset="assets/img/ai-480.avif 480w, assets/img/ai-800.avif 800w, assets/img/ai-960.avif 960w" sizes="(max-width:600px) 100vw, 380px">
+              <source type="image/webp" srcset="assets/img/ai-480.webp 480w, assets/img/ai-800.webp 800w, assets/img/ai-960.webp 960w" sizes="(max-width:600px) 100vw, 380px">
+              <img src="assets/img/ai-480.webp" alt="شبكة عصبية مضيئة على خلفية كحلية" width="480" height="360" loading="lazy">
+            </picture>
+            <div class="project__body">
+              <span class="tag">ذكاء اصطناعي</span>
+              <h3>مختبر الذكاء الاصطناعي</h3>
+              <p>الفريق الذي يبني النماذج المستخدمة في منتجاتنا.</p>
+            </div>
+            <template>
+              <p>فريق داخلي يجمع البيانات ويدرب النماذج ويختبرها قبل دمجها في المنتجات. من أعماله نموذج التعرف على لغة الإشارة في Smart Signal ونظام اقتراح الإعلانات في MyKey.</p>
+              <ul class="checklist"><li>رؤية حاسوبية للتعرف على الحركة</li><li>معالجة النصوص العربية</li><li>أنظمة اقتراح حسب اهتمام المستخدم</li></ul>
+            </template>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- success story: Smart Signal -->
+    <section class="section section--dark">
+      <div class="container grid grid--2">
+        <div class="reveal">
+          <span class="eyebrow">قصة نجاح</span>
+          <h2>Smart Signal: حوار من دون مترجم</h2>
+          <p class="lead">كان الشخص الأصم يحتاج مترجماً أو ورقة وقلماً ليتحدث مع موظف أو بائع. مع Smart Signal يكفي أن يوجه الهاتف نحو يديه، فيظهر الكلام نصاً ويسمعه الطرف الآخر بصوت واضح.</p>
+          <ul class="checklist">
+            <li>تواصل مباشر في المقهى والسوق والدوائر الرسمية</li>
+            <li>استقلالية أكبر للمستخدم في حياته اليومية</li>
+            <li>أول منتج للشركة مبني بالكامل على الذكاء الاصطناعي</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <div class="video-card">
+            <video controls preload="metadata" poster="assets/video/smart-signal-poster.webp" width="1280" height="720">
+              <source src="assets/video/smart-signal.mp4" type="video/mp4">
+              <track kind="captions" src="assets/video/smart-signal.vtt" srclang="ar" label="العربية">
+              متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+          </div>
+          <p class="video-caption">قصة نجاح Smart Signal (28 ثانية) مع ترجمة متزامنة.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- tour video + achievements -->
+    <section class="section">
+      <div class="container grid grid--2">
+        <div class="reveal">
+          <div class="video-card">
+            <video controls preload="metadata" poster="assets/video/projects-poster.webp" width="1280" height="720">
+              <source src="assets/video/projects.mp4" type="video/mp4">
+              <track kind="captions" src="assets/video/projects.vtt" srclang="ar" label="العربية">
+              متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+          </div>
+          <p class="video-caption">جولة في مشاريع MyKey و Sada و Welcome (27 ثانية).</p>
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">إنجازات</span>
+          <h2>ما حققناه مع عملائنا</h2>
+          <ul class="timeline">
+            <li><strong>خمسة منتجات رئيسية</strong><span>في الإتاحة والعقارات والتعليم والتجارة والصحة.</span></li>
+            <li><strong>أنظمة تعمل كل يوم داخل المشافي</strong><span>تنظم عمل الاستقبال والأطباء والمخابر والمحاسبة.</span></li>
+            <li><strong>تعليم مستمر عن بعد</strong><span>منصة Sada تتيح للطالب متابعة دروسه من البيت.</span></li>
+            <li><strong>ذكاء اصطناعي يخدم الإتاحة</strong><span>Smart Signal يفتح باب التواصل أمام الصم.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="cta reveal">
+          <div>
+            <h2>مشروعك التالي يمكن أن يكون هنا</h2>
+            <p>أخبرنا بفكرتك ونبدأ معك من الخطوة الأولى.</p>
+          </div>
+          <a class="btn btn--ghost" href="contact.html">ابدأ مشروعك</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- project details modal (filled by main.js) -->
+  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-label="تفاصيل المشروع">
+    <div class="modal__box">
+      <button class="modal__close" aria-label="إغلاق">&times;</button>
+      <div class="modal__media"></div>
+      <div class="modal__text">
+        <h3></h3>
+        <div class="modal__desc"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/logo/logo-light.svg" alt="Smart Land" width="172" height="44">
+          <p>شركة تقنية تأسست عام 2011، تطور تطبيقات ومنصات ذكية في الإتاحة والعقارات والتعليم والتجارة والصحة.</p>
+        </div>
+        <div>
+          <h3>روابط</h3>
+          <ul>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="projects.html">مشاريعنا</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>عن هذا الموقع</h3>
+          <p>مشروع جامعي لمقرر الوسائط المتعددة BMM601 في الجامعة الافتراضية السورية. الصور ومقاطع الفيديو مولدة بأداة Google Flow ثم معدلة.</p>
+        </div>
+      </div>
+      <div class="credit">
+        <span>&copy; <span class="year">2026</span> Smart Land</span>
+        <span lang="en">Mohammed Zaid Al-Nahhas · mhd_zaid_211096</span>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" aria-label="العودة للأعلى">&uarr;</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
