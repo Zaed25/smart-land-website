@@ -3,7 +3,7 @@
 For every video:
   1. title cards and caption images are drawn as HTML and captured with headless Chrome (Arabic text with the Cairo font)
   2. the voice-over is a recorded narration (one file per video) cut into sentences at its pauses;
-     a video without a recording falls back to the macOS Arabic voice (say -v Majed).
+     a video without a recording falls back to the macOS Arabic voice (say -v Majed); all three now have one.
      The audio watermark (sound logo) plays over the closing logo card
   3. a soft background track is synthesised with NumPy (chords + a light arpeggio)
   4. ffmpeg joins the clips with cross-fades, overlays the captions at the same time as the voice,
@@ -74,6 +74,7 @@ CARD_SEC, OUTRO_SEC = 3.0, 3.5
 VOICE = {
     "intro": ("vo_intro.wav", [(0.00, 5.70), (6.33, 10.60), (11.33, 14.45), (15.23, 18.05), (18.73, 22.52)]),
     "smart-signal": ("vo_smart_signal.wav", [(0.20, 4.92), (5.48, 9.98), (10.62, 14.40)]),
+    "projects": ("vo_projects.wav", [(0.00, 5.62), (6.08, 11.33), (12.47, 17.30)]),
 }
 WATERMARK = "watermark.wav"
 
