@@ -126,13 +126,19 @@ def to_wav(src, dst, extra=()):
 
 
 def recorded(key, n):
-    """sentence n of the recorded narration of video `key`"""
+    """sentence n of the recorded narration of video `key`.
+    The whole file is decoded once and the sentence is cut from the samples
+    (ffmpeg -ss does not seek reliably in these WAV files)."""
     file, cuts = VOICE[key]
+    full = TMP / f"{key}_voice_full.wav"
+    if not full.exists():
+        to_wav(SRC / file, full, ["-af", "highpass=f=80"])
     a, b = cuts[n]
-    wav = TMP / f"{key}_rec{n}.wav"
-    to_wav(SRC / file, wav, ["-ss", f"{a}", "-to", f"{b}", "-af",
-                             f"highpass=f=80,afade=t=in:d=0.03,afade=t=out:st={b - a - 0.06:.2f}:d=0.06"])
-    v = read_wav(wav)
+    v = read_wav(full)[int(a * SR):int(b * SR)].copy()
+    assert len(v) and np.abs(v).max() > 0.01, f"sentence {n} of {file} is empty or silent"
+    f_in, f_out = int(0.03 * SR), int(0.06 * SR)                 # short fades so the cut makes no click
+    v[:f_in] *= np.linspace(0, 1, f_in)
+    v[-f_out:] *= np.linspace(1, 0, f_out)
     return v / np.abs(v).max() * 0.9
 
 
@@ -258,6 +264,7 @@ def build(key, spec):
     talking = np.convolve((np.abs(voice_track) > 0.01).astype(float), np.ones(SR // 4) / (SR // 4), "same")
     duck = 1 - 0.6 * np.clip(talking * 3, 0, 1)                    # music goes down while the voice speaks
     mix = 0.10 * amb + 0.22 * mus * duck + 0.95 * voice_track
+    assert np.isfinite(mix).all() and np.abs(mix).max() > 0, f"{key}: audio mix is empty"
     mix = mix / np.abs(mix).max() * 0.89
     wav = TMP / f"{key}_mix.wav"
     write_wav(mix, wav)
