@@ -33,7 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
   // 4. counters in the statistics bar (count up once)
-  const counters = document.querySelectorAll("[data-count]");
+  // (skipped when the visitor asked the system for reduced motion: the final numbers are already in the HTML)
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const counters = reduced ? [] : document.querySelectorAll("[data-count]");
   const countIO = new IntersectionObserver((entries) => {
     entries.forEach((e) => {
       if (!e.isIntersecting) return;
